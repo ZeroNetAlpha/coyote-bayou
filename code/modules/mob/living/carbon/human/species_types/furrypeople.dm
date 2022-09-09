@@ -18,3 +18,34 @@
 	species_type = "furry"
 
 	allowed_limb_ids = list("mammal","aquatic","avian","shadekin")
+
+/datum/species/mammal/robotic
+	name = "Synthetic Anthromorph"
+	id = "synthmammal"
+	say_mod = "beeps"
+	species_traits = list(MUTCOLORS,NOTRANSSTING,EYECOLOR,LIPS,HAIR,ROBOTIC_LIMBS,EYECOLOR,LIPS,HAIR,HORNCOLOR,WINGCOLOR)
+	inherent_traits = list(TRAIT_EASYDISMEMBER,TRAIT_LIMBATTACHMENT,TRAIT_NO_PROCESS_FOOD,TRAIT_RADIMMUNE,TRAIT_NOBREATH)
+	inherent_biotypes = MOB_ROBOTIC|MOB_HUMANOID|MOB_BEAST
+	meat = /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/ipc
+	gib_types = list(/obj/effect/gibspawner/ipc, /obj/effect/gibspawner/ipc/bodypartless)
+	//Just robo looking parts.
+	mutant_heart = /obj/item/organ/heart/ipc
+	mutantlungs = /obj/item/organ/lungs/ipc
+	mutantliver = /obj/item/organ/liver/ipc
+	mutantstomach = /obj/item/organ/stomach/ipc
+	mutanteyes = /obj/item/organ/eyes/ipc
+	mutantears = /obj/item/organ/ears/ipc
+	mutanttongue = /obj/item/organ/tongue/robot/ipc
+	mutant_brain = /obj/item/organ/brain/ipc
+
+	//special cybernetic organ for getting power from apcs
+	mutant_organs = list(/obj/item/organ/cyberimp/arm/power_cord)
+
+	exotic_bloodtype = "S"
+	exotic_blood_color = BLOOD_COLOR_OIL
+
+/datum/species/mammal/robotic/spec_life(mob/living/carbon/human/H)
+	if(H.nutrition < NUTRITION_LEVEL_FED)
+		H.nutrition = NUTRITION_LEVEL_FED
+	if(H.nutrition > NUTRITION_LEVEL_FED)
+		H.nutrition = NUTRITION_LEVEL_FED

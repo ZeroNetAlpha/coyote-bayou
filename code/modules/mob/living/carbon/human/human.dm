@@ -1256,6 +1256,9 @@
 /mob/living/carbon/human/species/mammal
 	race = /datum/species/mammal
 
+/mob/living/carbon/human/species/mammal/robotic
+	race = /datum/species/mammal/robotic
+
 /mob/living/carbon/human/species/insect
 	race = /datum/species/insect
 
