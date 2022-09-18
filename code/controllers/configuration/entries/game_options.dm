@@ -521,7 +521,7 @@
 
 ///Initial loadout points
 /datum/config_entry/number/initial_gear_points
-	config_entry_value = 10
+	config_entry_value = 29
 
 /**
  * Enables the FoV component, which hides objects and mobs behind the parent from their sight, unless they turn around, duh.

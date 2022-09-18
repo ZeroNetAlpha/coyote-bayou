@@ -198,7 +198,7 @@
 
 /datum/gear/backpack/vaultguns/aep7
 	name = "AEP7"
-	path = /obj/item/gun/energy/laser/pistol 
+	path = /obj/item/gun/energy/laser/pistol
 	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_VAULTGUNS
 	cost = 3
 	restricted_desc = "Vault 113"
